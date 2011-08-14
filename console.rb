@@ -4,7 +4,7 @@ require 'rubygems'
 require 'vk-ruby'
 require 'uri'
 
-class Console < VK::Standalone
+class VK_console < VK::Standalone
   
   def initialize(p={})
     @logger = p[:logger]    

@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = [%q{Andrew Zinenko}]
-  s.date = %q{2011-08-14}
+  s.date = %q{2011-08-20}
   s.description = %q{ Ruby console for vk.com API }
   s.email = %q{zinenkoan@gmail.com}
   s.extra_rdoc_files = [
@@ -18,13 +18,17 @@ Gem::Specification.new do |s|
   ]
   s.files = [
     ".document",
+    ".rvmrc",
     "Gemfile",
     "Gemfile.lock",
     "LICENSE.txt",
     "README.md",
     "Rakefile",
     "VERSION",
-    "lib/vk-console.rb"
+    "example/audio_sync/audio_sync.rb",
+    "example/audio_sync/config.yml.example",
+    "lib/vk-console.rb",
+    "vk-console.gemspec"
   ]
   s.homepage = %q{http://github.com/zinenko/vk-console}
   s.licenses = [%q{MIT}]

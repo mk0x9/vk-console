@@ -23,3 +23,4 @@ Jeweler::Tasks.new do |gem|
   gem.files.include 'lib/**/*'
   gem.add_runtime_dependency 'vk-ruby'
 end
+Jeweler::GemcutterTasks.new

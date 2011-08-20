@@ -1,0 +1,6 @@
+app_id: 'APP_ID'
+email: 'example@gmail.com'
+password: 'strong_password'
+logfile: 'STDOUT'
+debug: false
+save_dir: '/home/username/audio'

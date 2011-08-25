@@ -7,8 +7,35 @@ Ruby wrapper for vk.com API
 `gem install vk-console`
 
 ## How to use?
-
-
+```.ruby
+irb 
+ruby-1.9.2-p290 :001 > require 'vk-console'
+ruby-1.9.2-p290 :006 > console = VK::Console.new :app_id => 'APP_ID', 
+                                                 :email => 'example@gmail.com', 
+                                                 :password => 'you_password', 
+                                                 :logger => $STDOUT, 
+                                                 :debug => false
+ => #<VK::Console:0x00000002147600 @logger=nil, @debug=false, ........
+ 
+ruby-1.9.2-p290 :007 > console.isAppUser
+ => "1" 
+console.friends.get
+ => [1729061, 3369964, 4638502, 5138714, 6242991, 75145 .....
+console.audio.search(:q => 'sting').each{|track| puts track.inspect}
+212993
+{"aid"=>"116741294", "owner_id"=>"58377004", 
+                     "artist"=>"Sting", 
+                     "title"=>"Englishman In New York  ", 
+                     "duration"=>"269", 
+                     "url"=>"http://cs4768.vkontakte.ru/u42849027/audio/07b6ef7dfd9d.mp3", 
+                     "lyrics_id"=>"16729834"}
+{"aid"=>"116487251", "owner_id"=>"4719192", 
+                     "artist"=>"Sting", 
+                     "title"=>"Until...", 
+                     "duration"=>"190", 
+                     "url"=>"http://cs5048.vkontakte.ru/u4719192/audio/7febac4a2ed8.mp3"}
+....
+```
 
 ## Tests
 

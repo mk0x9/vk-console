@@ -37,6 +37,10 @@ console.audio.search(:q => 'sting').each{|track| puts track.inspect}
 ....
 ```
 
+## Examples
+
+ https://github.com/zinenko/vk-console/tree/master/example
+
 ## Tests
 
 Coming soon!
